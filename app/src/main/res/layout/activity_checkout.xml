@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOut"
+    android:background="#475D6E"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/imLogo"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logohospet"
+            android:onClick="ibLogoOnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/im_fell_english"
+        android:hint="Check-out"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cao"
+        />
+
+    <LinearLayout
+        android:id="@+id/linMenu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:background="#1E3F59"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:cornerRadius="50sp">
+
+        <TextView
+            android:id="@+id/tvNomeAnimalCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Nome animal:"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etNomeAnimalCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15sp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvNomeTutorCoTutorCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Nome tutor/co-tutor"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etNomeTutorCoTutorCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15sp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:padding="3sp"
+            android:textColor="#FFFFFF"
+
+            android:textSize="14sp" />
+        <!--            android:background="#FFFFFF"-->
+
+        <TextView
+            android:id="@+id/tvValorEstadiaCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Valor Estadia"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValorEstadiaCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15sp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvValoresServicosCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Valores serviços"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValoresServicosCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15sp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvValoresAdicionais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Valores Adicionais"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValoresAdicionais"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15sp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvValorTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Valor Total"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValorTotal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15sp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12sp"
+            android:backgroundTint="#475D6E "
+            android:fontFamily="@font/inconsolata"
+            android:hint="CHECK OUT"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            app:cornerRadius="5sp" />
+
+        <Button
+            android:id="@+id/btFichaAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12sp"
+            android:backgroundTint="#23475D6E"
+            android:fontFamily="@font/inconsolata"
+            android:hint="VER FICHA ANIMAL"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            app:cornerRadius="5sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

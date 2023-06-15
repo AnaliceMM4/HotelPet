@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FichaComportamentoPet"
+    android:background="#475D6E"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/imLogo"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logohospet"
+            android:onClick="ibLogoOnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linMenu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#1E3F59"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/im_fell_english"
+            android:hint="Ficha de Comportamento do Pet"
+            android:textAlignment="center"
+            android:textColorHint="#FFFFFF"
+            android:textSize="26sp"
+            android:layout_marginBottom="20sp"/>
+
+        <TextView
+            android:id="@+id/tvLocalAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Local onde se encontra o animal"
+            android:textAlignment="center"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etLocalAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:textSize="14sp"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:layout_marginBottom="15sp" />
+
+        <TextView
+            android:id="@+id/tvAlimentacaoAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Do que está se alimentando"
+            android:fontFamily="@font/inknut_antiqua"
+            android:textAlignment="center"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etAlimentacaoAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inknut_antiqua"
+            android:textSize="14sp"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:layout_marginBottom="15sp"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tvComportamentoAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Comportamento"
+            android:textColorHint="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etComportamentoAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:textSize="14sp"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:layout_marginBottom="15sp" />
+
+        <TextView
+            android:id="@+id/tvAtividadeRealizadasAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Atividades que tem realizado"
+            android:textAlignment="center"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etAtividadeRealizadasAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:textSize="14sp"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:layout_marginBottom="15sp" />
+
+
+        <TextView
+            android:id="@+id/tvSaudeAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Saúde do Animal"
+            android:textAlignment="center"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etSaudeAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:textSize="14sp"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:layout_marginBottom="15sp" />
+
+        <Button
+            android:id="@+id/btSalvarFicha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#284A6A"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="20sp"
+            android:hint="SALVAR FICHA"
+            android:textColorHint="#FFFFFF"
+            app:cornerRadius="5sp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
