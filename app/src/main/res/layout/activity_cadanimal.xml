@@ -116,6 +116,50 @@
             android:textColor="#686464"
             android:layout_marginBottom="15sp" />
 
+        <TextView
+            android:id="@+id/tvAndarHopedagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Andar Hospedagem"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etAndarHopedagem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:textSize="14sp"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:layout_marginBottom="15sp" />
+
+        <TextView
+            android:id="@+id/tvServico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:hint="Servicos"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etServico"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/inknut_antiqua"
+            android:textSize="14sp"
+            android:padding="3sp"
+            android:textColor="#686464"
+            android:layout_marginBottom="15sp" />
+
         <Button
             android:id="@+id/btCadAnimal"
             android:layout_width="match_parent"

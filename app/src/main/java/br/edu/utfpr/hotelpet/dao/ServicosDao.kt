@@ -1,20 +1,30 @@
 package br.edu.utfpr.hotelpet.dao
 
-import android.util.Log
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Update
 import br.edu.utfpr.hotelpet.model.Servico
 
+@Dao
+interface ServicosDao {
+    @Query("SELECT * FROM Servico")
+    fun findAll(): List<Servico>
 
-class ServicosDao {
-    fun add (servico: Servico){
-        servicos.add(servico)
-        Log.i("ServicosDao", "Add: $servico")
-    }
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun save(vararg servico: Servico)
 
-    fun findAll(): List<Servico>{
-        return servicos.toList()
-    }
+    @Update
+    fun update(vararg servico: Servico)
 
-    companion object{
-        private val servicos = mutableListOf<Servico>()
-    }
+    @Delete
+    fun delete(vararg servico: Servico)
+
+    @Query("SELECT * FROM Servico WHERE id = :id")
+    fun findById(id: Long) : Servico?
+
+    @Query("SELECT * FROM Servico WHERE nomeServico = :nome")
+    fun findByName(nome: String) : Servico?
 }
