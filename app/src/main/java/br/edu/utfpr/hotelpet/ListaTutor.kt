@@ -12,6 +12,7 @@ import br.edu.utfpr.hotelpet.databinding.ActivityTutoresBinding
 class ListaTutor : AppCompatActivity() {
     private val adapter = TutorAdapter(context = this)
     private val binding by lazy {
+        //chama a activity_tutores
         ActivityTutoresBinding.inflate(layoutInflater)
     }
 

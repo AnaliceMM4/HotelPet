@@ -14,6 +14,7 @@ class TutorAdapter(
 ) : RecyclerView.Adapter<TutorAdapter.ViewHolder>(){
     private val tutores = tutores.toMutableList()
 
+    //chama a activity_lista_tutor
     inner class ViewHolder(private val binding: ActivityListaTutorBinding):
         RecyclerView.ViewHolder(binding.root) {
             private lateinit var tutor: Tutor
