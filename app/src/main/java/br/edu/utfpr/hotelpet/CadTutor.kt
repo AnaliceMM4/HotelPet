@@ -51,8 +51,9 @@ class CadTutor : AppCompatActivity() {
             val endereco = campoEndereco.text.toString()
 
             val campoObjAnimal = binding.etNomePetdoTutor
-            val animalFind : Animal? = animalDao.findByName(campoObjAnimal.text.toString())
-            val animal = animalFind?.nome
+            //val animalFind : Animal? = animalDao.findByName(campoObjAnimal.text.toString())
+            //val animal = animalFind?.nome
+            val animal = campoObjAnimal.text.toString()
 
             val tutor = Tutor(
                 id = idTutor,
