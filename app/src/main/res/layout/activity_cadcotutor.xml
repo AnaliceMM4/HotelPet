@@ -1,137 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadCoTutor"
-    android:orientation="vertical"
-    android:background="#475D6E">
-
+    android:fillViewport="true">
     <LinearLayout
-        android:id="@+id/linLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="170dp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CadCoTutor"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:background="#475D6E">
 
-        <ImageButton
-            android:id="@+id/imLogo"
-            android:layout_width="120dp"
-            android:layout_height="160dp"
+        <LinearLayout
+            android:id="@+id/linLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
             android:layout_gravity="center"
-            android:background="@drawable/logohospet"
-            android:onClick="ibLogoOnClick"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imLogo"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logohospet"
+                android:onClick="ibLogoOnClick"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linMenu1"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/im_fell_english"
+                android:hint="Cadastro Co-Tutor"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="28sp"
+                android:layout_marginBottom="20sp"/>
+
+            <TextView
+                android:id="@+id/tvNomeCoTutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/inknut_antiqua"
+                android:hint="Nome"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNomeCoTutor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15sp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/inknut_antiqua"
+                android:hint="Digite o seu nome"
+                android:padding="3sp"
+                android:textColor="#252424"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvTelefoneCoTutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Telefone"
+                android:fontFamily="@font/inknut_antiqua"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etTelefoneCoTutor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/inknut_antiqua"
+                android:textSize="14sp"
+                android:padding="3sp"
+                android:textColor="#686464"
+                android:layout_marginBottom="15sp"
+                android:background="#FFFFFF"
+                android:hint="(xx)xxxxx-xxxx"
+                />
+
+            <TextView
+                android:id="@+id/tvCPFCoTutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/inknut_antiqua"
+                android:hint="CPF"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etCPFCoTutor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/inknut_antiqua"
+                android:textSize="14sp"
+                android:padding="3sp"
+                android:textColor="#686464"
+                android:layout_marginBottom="15sp"
+                android:hint="123.456.789-10"
+                />
+
+            <Button
+                android:id="@+id/btCadastrarCoTutor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#284A6A"
+                android:layout_marginTop="12sp"
+                android:fontFamily="@font/inconsolata"
+                android:textSize="20sp"
+                android:hint="CADASTRAR CO-TUTOR"
+                android:textColorHint="#FFFFFF"
+                app:cornerRadius="5sp"/>
+
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linMenu1"
-        android:layout_width="301dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="0dp"
-        android:orientation="vertical"
-        android:padding="10dp"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/im_fell_english"
-            android:hint="Cadastro Co-Tutor"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textSize="28sp"
-            android:layout_marginBottom="20sp"/>
-
-        <TextView
-            android:id="@+id/tvNomeCoTutor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/inknut_antiqua"
-            android:hint="Nome"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/etNomeCoTutor"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="15sp"
-            android:background="#FFFFFF"
-            android:fontFamily="@font/inknut_antiqua"
-            android:hint="Digite o seu nome"
-            android:padding="3sp"
-            android:textColor="#252424"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/tvTelefoneCoTutor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:hint="Telefone"
-            android:fontFamily="@font/inknut_antiqua"
-            android:textColorHint="#FFFFFF"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/etTelefoneCoTutor"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/inknut_antiqua"
-            android:textSize="14sp"
-            android:padding="3sp"
-            android:textColor="#686464"
-            android:layout_marginBottom="15sp"
-            android:background="#FFFFFF"
-            android:hint="(xx)xxxxx-xxxx"
-            />
-
-        <TextView
-            android:id="@+id/tvCPFCoTutor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/inknut_antiqua"
-            android:hint="CPF"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/etCPFCoTutor"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFFFFF"
-            android:fontFamily="@font/inknut_antiqua"
-            android:textSize="14sp"
-            android:padding="3sp"
-            android:textColor="#686464"
-            android:layout_marginBottom="15sp"
-            android:hint="123.456.789-10"
-            />
-
-        <Button
-            android:id="@+id/btCadastrarCoTutor"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="#284A6A"
-            android:layout_marginTop="12sp"
-            android:fontFamily="@font/inconsolata"
-            android:textSize="20sp"
-            android:hint="CADASTRAR CO-TUTOR"
-            android:textColorHint="#FFFFFF"
-            app:cornerRadius="5sp"/>
-
-    </LinearLayout>
-
-
-</LinearLayout>
+</ScrollView>
