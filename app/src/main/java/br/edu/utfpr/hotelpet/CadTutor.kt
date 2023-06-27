@@ -3,23 +3,6 @@ package br.edu.utfpr.hotelpet
 import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
-<<<<<<< HEAD
-import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
-import br.edu.utfpr.hotelpet.databinding.ActivityCadtutorBinding
-
-class CadTutor : AppCompatActivity() {
-
-    private val binding by lazy{
-        ActivityCadtutorBinding.inflate(layoutInflater)
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-        setContentView(binding.root)
-        configCadCoTutor()
-        Log.i("CadTutor","OnCreate: Estado criado")
-=======
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.utfpr.hotelpet.dao.TutorDao
 import br.edu.utfpr.hotelpet.dataBase.DataBase
@@ -29,6 +12,7 @@ import br.edu.utfpr.hotelpet.model.Tutor
 import android.util.Log
 
 class CadTutor : AppCompatActivity() {
+
     private val binding by lazy {
         ActivityCadtutorBinding.inflate(layoutInflater)
     }
@@ -44,8 +28,8 @@ class CadTutor : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         setContentView(binding.root)
-
         configCadCoTutor()
+
         configBotaoListaTutor()
 
         val botaoCadTutor = binding.btCadastrarTutor
@@ -115,7 +99,6 @@ class CadTutor : AppCompatActivity() {
             val intent = Intent(this, ListaTutor::class.java)
             startActivity(intent)
         }
->>>>>>> 7b2eec34fdb87fb91e4a0fdbda3deeb46d7e8f2a
     }
 
     fun configCadCoTutor(){

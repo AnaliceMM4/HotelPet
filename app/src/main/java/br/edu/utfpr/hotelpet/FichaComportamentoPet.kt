@@ -9,10 +9,6 @@ import br.edu.utfpr.hotelpet.databinding.ActivityFichacomportamentopetBinding
 import br.edu.utfpr.hotelpet.model.FichaComportamento
 
 class FichaComportamentoPet : AppCompatActivity() {
-<<<<<<< HEAD
-
-
-=======
     private val binding by lazy{
         ActivityFichacomportamentopetBinding.inflate(layoutInflater)
     }
@@ -23,7 +19,6 @@ class FichaComportamentoPet : AppCompatActivity() {
     }
 
     private var idFichaComportamento = 0L
->>>>>>> 7b2eec34fdb87fb91e4a0fdbda3deeb46d7e8f2a
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
