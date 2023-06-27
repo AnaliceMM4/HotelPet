@@ -1,30 +1,30 @@
 package br.edu.utfpr.hotelpet.dao
 
-import android.util.Log
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Update
 import br.edu.utfpr.hotelpet.model.Tutor
 
-class TutorDao {
-    fun add (tutor: Tutor){
-        tutores.add(tutor)
-        Log.i("TutorDao", "Add: $tutor")
-    }
+@Dao
+interface TutorDao {
+    @Query("SELECT * FROM Tutor")
+    fun findAll(): List<Tutor>
 
-    fun findAll(): List<Tutor>{
-        return tutores.toList()
-    }
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun save(vararg tutor: Tutor)
 
-    fun findByName(nome: String){
-        var tutorEncontrado: Tutor? = null
+    @Update
+    fun update(vararg tutor: Tutor)
 
-        for(item in tutores) {
-            if (item.nome == nome) {
-                tutorEncontrado = item
-            }
-        }
-        Log.i("FindByNome", "found: $tutorEncontrado")
-    }
+    @Delete
+    fun delete(vararg tutor: Tutor)
 
-    companion object{
-        private val tutores = mutableListOf<Tutor>()
-    }
+    @Query("SELECT * FROM Tutor WHERE id = :id")
+    fun findById(id: Long) : Tutor?
+
+    @Query("SELECT * FROM Tutor WHERE nome = :nome")
+    fun findByName(nome: String) : Tutor?
 }

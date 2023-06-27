@@ -1,19 +1,30 @@
 package br.edu.utfpr.hotelpet.dao
 
-import android.util.Log
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Update
 import br.edu.utfpr.hotelpet.model.Animal
 
-class AnimalDao {
-    fun add (animal: Animal){
-        animais.add(animal)
-        Log.i("AnimalDao", "Add: $animal")
-    }
+@Dao
+interface AnimalDao {
+    @Query("SELECT * FROM Animal")
+    fun findAll(): List<Animal>
 
-    fun findAll(): List<Animal>{
-        return animais.toList()
-    }
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun save(vararg animal: Animal)
 
-    companion object{
-        private val animais = mutableListOf<Animal>()
-    }
+    @Update
+    fun update(vararg animal: Animal)
+
+    @Delete
+    fun delete(vararg animal: Animal)
+
+    @Query("SELECT * FROM Animal WHERE id = :id")
+    fun findById(id: Long) : Animal?
+
+    @Query("SELECT * FROM Animal WHERE nome = :nome")
+    fun findByName(nome: String) : Animal?
 }

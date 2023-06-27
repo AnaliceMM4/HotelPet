@@ -37,6 +37,12 @@
             android:name=".CadAnimal"
             android:exported="false" />
         <activity
+            android:name=".ListaTutor"
+            android:exported="false" />
+        <activity
+            android:name=".details.DetailTutor"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

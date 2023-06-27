@@ -1,19 +1,29 @@
 package br.edu.utfpr.hotelpet.dao
 
 import android.util.Log
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Update
 import br.edu.utfpr.hotelpet.model.FichaComportamento
+import br.edu.utfpr.hotelpet.model.Servico
 
-class FichaComportamentoDao {
-    fun add (ficha: FichaComportamento){
-        fichas.add(ficha)
-        Log.i("FichaDao", "Add: $ficha")
-    }
+@Dao
+interface FichaComportamentoDao {
+    @Query("SELECT * FROM FichaComportamento")
+    fun findAll(): List<FichaComportamento>
 
-    fun findAll(): List<FichaComportamento>{
-        return fichas.toList()
-    }
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun save(vararg fichaComportamento: FichaComportamento)
 
-    companion object{
-        private val fichas = mutableListOf<FichaComportamento>()
-    }
+    @Update
+    fun update(vararg fichaComportamento: FichaComportamento)
+
+    @Delete
+    fun delete(vararg fichaComportamento: FichaComportamento)
+
+    @Query("SELECT * FROM FichaComportamento WHERE id = :id")
+    fun findById(id: Long) : FichaComportamento?
 }
