@@ -2,7 +2,6 @@ package br.edu.utfpr.hotelpet
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.utfpr.hotelpet.dao.TutorDao
 import br.edu.utfpr.hotelpet.dataBase.DataBase
@@ -25,8 +24,8 @@ class CadTutor : AppCompatActivity() {
     private var url: String? = null
     private var idTutor = 0L
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(binding.root)
         configCadCoTutor()
 
@@ -52,7 +51,8 @@ class CadTutor : AppCompatActivity() {
             val endereco = campoEndereco.text.toString()
 
             val campoObjAnimal = binding.etNomePetdoTutor
-            var animal: Animal? = animalDao.findByName(campoObjAnimal.text.toString())
+            val animalFind : Animal? = animalDao.findByName(campoObjAnimal.text.toString())
+            val animal = animalFind?.nome
 
             val tutor = Tutor(
                 id = idTutor,
@@ -90,7 +90,7 @@ class CadTutor : AppCompatActivity() {
         binding.etCPFTutor.setText(it.cpf)
         binding.etTelefoneTutor.setText(it.telefone)
         binding.etEnderecoTutor.setText(it.endereco)
-        binding.etNomePetdoTutor.setText(it.animal!!.nome)//tirar dúvida com o professor sobre essa parte
+        binding.etNomePetdoTutor.setText(it.animal)//tirar dúvida com o professor sobre essa parte
     }
 
     fun configBotaoListaTutor(){

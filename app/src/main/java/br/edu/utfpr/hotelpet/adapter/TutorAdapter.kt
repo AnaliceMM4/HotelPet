@@ -37,7 +37,7 @@ class TutorAdapter(
                 telefone.text = tutor.telefone
                 cpf.text = tutor.cpf
                 endereco.text = tutor.endereco
-                animal.text = tutor.animal?.nome ?: String()
+                animal.text = tutor.animal
             }
         }
 

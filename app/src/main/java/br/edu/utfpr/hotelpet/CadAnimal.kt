@@ -46,7 +46,8 @@ class CadAnimal : AppCompatActivity() {
             //sentido que de pra selecionar varios ou nos mudamos isso
             //pra pacote
             val campoServicoAni = binding.etServico
-            val servico: Servico? = servicoDao.findByName(campoServicoAni.text.toString())
+            val servicofind: Servico? = servicoDao.findByName(campoServicoAni.text.toString())
+            val servico = servicofind?.nomeServico
 
             val animal = Animal(
                 id = idAnimal,
@@ -83,6 +84,6 @@ class CadAnimal : AppCompatActivity() {
         binding.etPorteAnimal.setText(it.porte)
         binding.etEspecieAnimal.setText(it.especie)
         binding.etAndarHopedagem.setText(it.andarHopedagem)
-        binding.etServico.setText(it.servico!!.nomeServico)//tirar dúvida com o professor sobre essa parte
+        binding.etServico.setText(it.servico)//tirar dúvida com o professor sobre essa parte
     }
 }

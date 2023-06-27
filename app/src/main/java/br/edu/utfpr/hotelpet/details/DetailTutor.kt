@@ -72,7 +72,7 @@ class DetailTutor : AppCompatActivity(){
             detailTelefone.text = tutor.telefone
             detailCpf.text = tutor.cpf
             detailEndereco.text = tutor.endereco
-            detailAnimal.text = tutor.animal?.nome ?: String()
+            detailAnimal.text = tutor.animal
         }
     }
 }

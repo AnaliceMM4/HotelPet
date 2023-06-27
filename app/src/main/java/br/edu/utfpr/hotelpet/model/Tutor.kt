@@ -10,5 +10,5 @@ class Tutor(
     var telefone: String,
     var cpf: String,
     var endereco: String,
-    var animal: Animal?,
+    var animal: String?,
     )
