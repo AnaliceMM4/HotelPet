@@ -7,14 +7,10 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import br.edu.utfpr.hotelpet.CHAVE_FICHACOMPORTAMENTO
-import br.edu.utfpr.hotelpet.CHAVE_TUTOR
-import br.edu.utfpr.hotelpet.CadTutor
 import br.edu.utfpr.hotelpet.R
 import br.edu.utfpr.hotelpet.dataBase.DataBase
 import br.edu.utfpr.hotelpet.databinding.ActivityDetailFichaComportamentoPetBinding
-import br.edu.utfpr.hotelpet.databinding.ActivityDetailTutorBinding
 import br.edu.utfpr.hotelpet.model.FichaComportamento
-import br.edu.utfpr.hotelpet.model.Tutor
 
 class DetailFichaComportamentoPet : AppCompatActivity(){
     private var fichaId: Long = 0L

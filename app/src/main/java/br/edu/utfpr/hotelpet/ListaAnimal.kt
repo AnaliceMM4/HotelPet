@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import br.edu.utfpr.hotelpet.adapter.AnimalAdapter
 import br.edu.utfpr.hotelpet.dataBase.DataBase
 import br.edu.utfpr.hotelpet.databinding.ActivityAnimaisBinding
-import br.edu.utfpr.hotelpet.databinding.ActivityDetailAnimalBinding
+import br.edu.utfpr.hotelpet.details.DetailAnimal
 
 //import br.edu.utfpr.hotelpet.databinding.ActivityDetailAnimalBinding
 
@@ -20,7 +20,7 @@ class ListaAnimal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-//        configRecyclerView()
+        configRecyclerView()
         configFloatingActionButton()
     }
 
@@ -44,7 +44,7 @@ class ListaAnimal : AppCompatActivity() {
         rview.adapter = adapter
         adapter.click = { animal ->
             val intent = Intent(
-                this, ActivityDetailAnimalBinding::class.java
+                this, DetailAnimal::class.java
             ).apply {
                 putExtra(CHAVE_ANIMAL, animal.id)
             }

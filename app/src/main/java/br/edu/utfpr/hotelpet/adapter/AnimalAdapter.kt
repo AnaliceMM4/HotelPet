@@ -1,6 +1,7 @@
 package br.edu.utfpr.hotelpet.adapter
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -44,6 +45,7 @@ class AnimalAdapter (
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val binding = ActivityListaAnimalBinding.inflate(LayoutInflater.from(context), parent, false)
+            Log.i("Animal_Adapter", "Oncreate: $binding")
             return ViewHolder(binding)
         }
 

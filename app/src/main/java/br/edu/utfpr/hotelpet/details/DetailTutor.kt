@@ -1,13 +1,10 @@
 package br.edu.utfpr.hotelpet.details
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.utfpr.hotelpet.CHAVE_TUTOR
-import br.edu.utfpr.hotelpet.CadTutor
 import br.edu.utfpr.hotelpet.R
 import br.edu.utfpr.hotelpet.dataBase.DataBase
 import br.edu.utfpr.hotelpet.databinding.ActivityDetailTutorBinding
@@ -33,7 +30,7 @@ class DetailTutor : AppCompatActivity(){
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val db = DataBase.instancia(this)
-        val tutorDao = db.tutorDao()
+        /*val tutorDao = db.tutorDao()
         when (item.itemId) {
             R.id.menu_delete -> {
                 Log.i("DetailTutor", "OnOptionsItemSelected: remover")
@@ -48,7 +45,7 @@ class DetailTutor : AppCompatActivity(){
                     startActivity(this)
                 }
             }
-        }
+        }*/
         return super.onOptionsItemSelected(item)
     }
 

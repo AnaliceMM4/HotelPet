@@ -42,7 +42,7 @@ class ListaFichaComportamento : AppCompatActivity()  {
         rview.adapter = adapter
         adapter.click = { ficha ->
             val intent = Intent(
-                this, ActivityDetailFichaComportamentoPetBinding::class.java
+                this, FichaComportamentoPet::class.java
             ).apply {
                 putExtra(CHAVE_FICHACOMPORTAMENTO, ficha.id)
             }

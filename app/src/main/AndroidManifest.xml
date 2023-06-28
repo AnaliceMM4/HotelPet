@@ -38,20 +38,20 @@
             android:name=".ListaTutor"
             android:exported="false" />
         <activity
-            android:name=".details.DetailTutor"
-            android:exported="false" />
-        <activity
             android:name=".ListaAnimal"
-            android:exported="false" />
-        <activity
-            android:name=".details.DetailAnimal"
             android:exported="false" />
         <activity
             android:name=".ListaFichaComportamento"
             android:exported="false" />
         <activity
+            android:name=".details.DetailTutor"
+            android:exported="false"/>
+        <activity
+            android:name=".details.DetailAnimal"
+            android:exported="false"/>
+        <activity
             android:name=".details.DetailFichaComportamentoPet"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

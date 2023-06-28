@@ -33,7 +33,6 @@ class CadAnimal : AppCompatActivity() {
         botaoCadAni.setOnClickListener {
             val db = DataBase.instancia(this)
             val animalDao = db.animalDao()
-            val servicoDao = db.servicoDao()
 
             val campoNomeAni = binding.etNomeAnimal
             val nomeAni = campoNomeAni.text.toString()
@@ -90,7 +89,7 @@ class CadAnimal : AppCompatActivity() {
         binding.etPorteAnimal.setText(it.porte)
         binding.etEspecieAnimal.setText(it.especie)
         binding.etAndarHopedagem.setText(it.andarHopedagem)
-        binding.etServico.setText(it.servico)//tirar dúvida com o professor sobre essa parte
+        binding.etServico.setText(it.servico)
     }
 
     fun configBotaoListaAnimal(){

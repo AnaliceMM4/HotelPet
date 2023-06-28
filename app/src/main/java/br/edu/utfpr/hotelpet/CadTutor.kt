@@ -36,7 +36,6 @@ class CadTutor : AppCompatActivity() {
         botaoCadTutor.setOnClickListener {
             val db = DataBase.instancia(this)
             val tutorDao = db.tutorDao()
-            val animalDao = db.animalDao()
 
             val campoNome = binding.etNomeTutor
             val nome = campoNome.text.toString()
