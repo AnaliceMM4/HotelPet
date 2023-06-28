@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import br.edu.utfpr.hotelpet.adapter.AnimalAdapter
 import br.edu.utfpr.hotelpet.dataBase.DataBase
 import br.edu.utfpr.hotelpet.databinding.ActivityAnimaisBinding
-import br.edu.utfpr.hotelpet.details.DetailAnimal
+import br.edu.utfpr.hotelpet.DetailAnimal
 
 //import br.edu.utfpr.hotelpet.databinding.ActivityDetailAnimalBinding
 

@@ -1,10 +1,13 @@
-package br.edu.utfpr.hotelpet.details
+package br.edu.utfpr.hotelpet
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.utfpr.hotelpet.CHAVE_TUTOR
+import br.edu.utfpr.hotelpet.CadTutor
 import br.edu.utfpr.hotelpet.R
 import br.edu.utfpr.hotelpet.dataBase.DataBase
 import br.edu.utfpr.hotelpet.databinding.ActivityDetailTutorBinding
@@ -30,7 +33,7 @@ class DetailTutor : AppCompatActivity(){
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val db = DataBase.instancia(this)
-        /*val tutorDao = db.tutorDao()
+        val tutorDao = db.tutorDao()
         when (item.itemId) {
             R.id.menu_delete -> {
                 Log.i("DetailTutor", "OnOptionsItemSelected: remover")
@@ -45,7 +48,7 @@ class DetailTutor : AppCompatActivity(){
                     startActivity(this)
                 }
             }
-        }*/
+        }
         return super.onOptionsItemSelected(item)
     }
 
@@ -53,11 +56,13 @@ class DetailTutor : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         tutorId = intent.getLongExtra(CHAVE_TUTOR, 0L)
+        configBtCheckIn()
     }
 
     override fun onResume() {
         super.onResume()
         tutor = tutorDao.findById(tutorId)
+
         tutor?.let {
             preencheCampos(it)
         } ?: finish()
@@ -70,6 +75,17 @@ class DetailTutor : AppCompatActivity(){
             detailTelefone.text = tutor.telefone
             detailEndereco.text = tutor.endereco
             detailAnimal.text = tutor.animal
+        }
+    }
+
+   private fun configBtCheckIn() {
+        val btCheckIn = binding.btCheckIn
+
+        btCheckIn.setOnClickListener {
+            val intent = Intent(this, CheckIn::class.java).apply {
+                putExtra(CHAVE_TUTOR, tutorId)
+            }
+            startActivity(intent)
         }
     }
 }

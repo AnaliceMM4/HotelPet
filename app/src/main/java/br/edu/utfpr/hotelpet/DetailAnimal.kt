@@ -1,4 +1,4 @@
-package br.edu.utfpr.hotelpet.details
+package br.edu.utfpr.hotelpet
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,9 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import br.edu.utfpr.hotelpet.CHAVE_ANIMAL
-import br.edu.utfpr.hotelpet.CadAnimal
-import br.edu.utfpr.hotelpet.R
 import br.edu.utfpr.hotelpet.dataBase.DataBase
 import br.edu.utfpr.hotelpet.databinding.ActivityDetailAnimalBinding
 import br.edu.utfpr.hotelpet.model.Animal

@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import br.edu.utfpr.hotelpet.adapter.TutorAdapter
 import br.edu.utfpr.hotelpet.dataBase.DataBase
 import br.edu.utfpr.hotelpet.databinding.ActivityTutoresBinding
-import br.edu.utfpr.hotelpet.details.DetailTutor
 
 class ListaTutor : AppCompatActivity() {
     private val adapter = TutorAdapter(context = this)

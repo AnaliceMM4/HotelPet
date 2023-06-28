@@ -81,5 +81,33 @@
             app:layout_constraintTop_toBottomOf="@id/detailEndereco"
             android:hint="Nome pet"
             />
+            <Button
+                android:id="@+id/btCheckIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:backgroundTint="#4A637A"
+                android:fontFamily="@font/inconsolata"
+                android:hint="CheckIn"
+                android:onClick="ibCheckInOnclick"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="5sp"
+                app:layout_constraintTop_toBottomOf="@id/detailAnimal"/>
+            <Button
+                android:id="@+id/btCheckOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/inconsolata"
+                android:hint="CheckOut"
+                android:onClick="ibCheckOutOnclick"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                android:textColorHint="#4A637A"
+                android:textSize="20sp"
+                app:cornerRadius="5sp"
+                app:layout_constraintTop_toBottomOf="@id/btCheckIn"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
