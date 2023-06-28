@@ -206,7 +206,7 @@
                 android:layout_marginTop="12sp"
                 android:backgroundTint="#FFFFFF"
                 android:fontFamily="@font/inconsolata"
-                android:hint="LISTA TUTORES"
+                android:hint="LISTA DOS TUTORES"
                 android:onClick="ibRegistrarCoTutorOnclick"
                 tools:ignore="SpeakableTextPresentCheck"
                 android:textColorHint="#4A637A"

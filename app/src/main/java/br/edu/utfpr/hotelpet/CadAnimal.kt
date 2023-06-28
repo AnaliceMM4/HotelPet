@@ -1,5 +1,6 @@
 package br.edu.utfpr.hotelpet
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -18,11 +19,15 @@ class CadAnimal : AppCompatActivity() {
         val db = DataBase.instancia(this)
         db.animalDao()
     }
+    private var url: String? = null
     private var idAnimal = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        configBotaoListaAnimal()
+
         val botaoCadAni = binding.btCadAnimal
 
         botaoCadAni.setOnClickListener {
@@ -60,7 +65,7 @@ class CadAnimal : AppCompatActivity() {
             )
             Log.i("Cad_Animal", "Oncreate: $animal")
 
-            if(idAnimal>0){
+            if(idAnimal > 0){
                 animalDao.update(animal)
             } else{
                 animalDao.save(animal)
@@ -87,4 +92,15 @@ class CadAnimal : AppCompatActivity() {
         binding.etAndarHopedagem.setText(it.andarHopedagem)
         binding.etServico.setText(it.servico)//tirar dúvida com o professor sobre essa parte
     }
+
+    fun configBotaoListaAnimal(){
+        val botaoListaAnimal = binding.btVerListaAnimais
+        botaoListaAnimal.setOnClickListener {
+            val intent = Intent(this, ListaAnimal::class.java)
+            startActivity(intent)
+        }
+    }
+
+
 }
+

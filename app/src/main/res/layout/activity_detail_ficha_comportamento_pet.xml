@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/detailNome"
+            android:id="@+id/detailLocalAnimal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -25,11 +25,11 @@
             android:textSize="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:hint="Nome tutor"
+            android:hint="Local onde se encontra o animal"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/detailCpf"
+            android:id="@+id/detailSeAlimentaDe"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -37,12 +37,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/detailNome"
-            android:hint="CPF"
+            app:layout_constraintTop_toBottomOf="@id/detailLocalAnimal"
+            android:hint="Do que está se alimentando"
             />
 
         <TextView
-            android:id="@+id/detailTelefone"
+            android:id="@+id/detailComportamento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -51,12 +51,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/detailCpf"
-            android:hint="Telefone"
+            app:layout_constraintTop_toBottomOf="@id/detailSeAlimentaDe"
+            android:hint="Comportamento"
             />
 
         <TextView
-            android:id="@+id/detailEndereco"
+            android:id="@+id/detailAtividadesRealizadas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -65,11 +65,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/detailTelefone"
-            android:hint="Endereco"
+            app:layout_constraintTop_toBottomOf="@id/detailComportamento"
+            android:hint="Atividades que tem realizado"
             />
         <TextView
-            android:id="@+id/detailAnimal"
+            android:id="@+id/detailSaude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -78,8 +78,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/detailEndereco"
-            android:hint="Nome pet"
+            app:layout_constraintTop_toBottomOf="@id/detailAtividadesRealizadas"
+            android:hint="Saúde do Animal"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

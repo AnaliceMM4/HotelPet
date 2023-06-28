@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListaTutor">
+    tools:context=".ListaFichaComportamento">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rview"
@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/activity_lista_tutor" />
+        tools:listitem="@layout/activity_lista_fichas" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -25,7 +25,7 @@
         android:background="#FFFFFF"
         android:clickable="true"
         android:focusable="true"
-        android:src="@drawable/tutor"
+        android:src="@drawable/ficha"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

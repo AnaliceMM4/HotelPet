@@ -69,8 +69,8 @@ class DetailTutor : AppCompatActivity(){
     private fun preencheCampos(tutor: Tutor) {
         with(binding) {
             detailNome.text = tutor.nome
-            detailTelefone.text = tutor.telefone
             detailCpf.text = tutor.cpf
+            detailTelefone.text = tutor.telefone
             detailEndereco.text = tutor.endereco
             detailAnimal.text = tutor.animal
         }

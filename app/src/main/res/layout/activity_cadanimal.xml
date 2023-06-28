@@ -178,9 +178,21 @@
             android:textColorHint="#FFFFFF"
             app:cornerRadius="5sp"/>
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/btVerListaAnimais"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12sp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/inconsolata"
+            android:hint="LISTA DOS ANIMAIS"
+            android:onClick="ibListaAnimaisOnclick"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:textColorHint="#4A637A"
+            android:textSize="20sp"
+            app:cornerRadius="5sp" />
 
     </LinearLayout>
-
+    </LinearLayout>
 
 </ScrollView>

@@ -10,5 +10,5 @@ class Animal(
     var especie: String,
     var porte: String,
     var andarHopedagem: String,
-    var servico: String?
+    var servico: String?,
     )

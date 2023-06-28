@@ -1,5 +1,6 @@
 package br.edu.utfpr.hotelpet
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,6 +24,9 @@ class FichaComportamentoPet : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        configBotaoListaFichaComportamento()
+
         val botaoFichaComp = binding.btSalvarFicha
 
         botaoFichaComp.setOnClickListener {
@@ -82,4 +86,13 @@ class FichaComportamentoPet : AppCompatActivity() {
         binding.etAtividadeRealizadasAnimal.setText(it.atividades)
         binding.etSaudeAnimal.setText(it.saudeDoAnimal)
     }
+
+    fun configBotaoListaFichaComportamento(){
+        val botaoFichasComportamento = binding.btVerFichasComportamento
+        botaoFichasComportamento.setOnClickListener {
+            val intent = Intent(this, ListaFichaComportamento::class.java)
+            startActivity(intent)
+        }
+    }
+
 }
