@@ -1,1 +1,3 @@
-## Contribuidores\n- Analice Moschen\n- Danieli Lefchak
+## Contribuidores
+- Analice Moschen
+- Danieli Lefchak
