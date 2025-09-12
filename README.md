@@ -12,13 +12,16 @@ Com ele, tutores podem cadastrar seus animais, realizar check-in/check-out e aco
 - ⚙️ Serviços: visualize os serviços disponíveis oferecidos pelo hotel.
 - 📑 Ficha do pet: acesso rápido às informações do animal.
 
-## 👩‍💻 Desenvolvedoras
-Analice Moschen e Danieli Maria Lefchak
 
 ## 🚀 Tecnologias utilizadas
 - Kotlin → desenvolvimento Android
 - Android Studio → ambiente de desenvolvimento
 - Figma → prototipação das telas
+
+
+## 👩‍💻 Desenvolvedoras
+Analice Moschen e Danieli Maria Lefchak
+
 
 🔹 Tela inicial com os desenvolvedores
 <img width="1366" height="768" alt="hospet1" src="https://github.com/user-attachments/assets/97adb960-8adb-414e-b153-fed3e952f780" />
@@ -28,4 +31,10 @@ Analice Moschen e Danieli Maria Lefchak
 
 🔹 Cadastro do tutor e do pet
 <img width="1353" height="768" alt="hospet3" src="https://github.com/user-attachments/assets/bcb68b41-01ee-4704-989c-906a4dc35ae3" />
+
+🔹 Check-in
+<img width="1366" height="768" alt="hospet4checkin" src="https://github.com/user-attachments/assets/a8ee7226-f502-4d87-8cec-138a86b3df2b" />
+
+🔹 Serviços
+<img width="1357" height="768" alt="hospet5servicos" src="https://github.com/user-attachments/assets/76297bf1-1899-4621-837d-951eae53336b" />
 
