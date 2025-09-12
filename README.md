@@ -1,7 +1,7 @@
 # HotelPet
 
 O **HOSPET** é um aplicativo desenvolvido para auxiliar no gerenciamento de hospedagem de pets 🐶🐱.
-Com ele, tutores podem cadastrar seus animais, realizar check-in/check-out e acompanhar os serviços oferecidos pelo hotel pet.
+Com ele, tutores podem cadastrar seus animais, realizar check-in/check-out e acompanhar os serviços oferecidos.
 
 ## ✨ Funcionalidades
 
