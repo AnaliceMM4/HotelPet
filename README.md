@@ -1,9 +1,9 @@
 # HotelPet
 
-O HOSPET é um aplicativo desenvolvido para auxiliar no gerenciamento de hospedagem de pets 🐶🐱.
+O **HOSPET** é um aplicativo desenvolvido para auxiliar no gerenciamento de hospedagem de pets 🐶🐱.
 Com ele, tutores podem cadastrar seus animais, realizar check-in/check-out e acompanhar os serviços oferecidos pelo hotel pet.
 
-✨ Funcionalidades
+## ✨ Funcionalidades
 
 - 📋 Cadastro do tutor: registre informações do responsável pelo pet.
 - 🐕 Cadastro do animal: adicione dados do bichinho, como nome e informações básicas.
@@ -12,21 +12,20 @@ Com ele, tutores podem cadastrar seus animais, realizar check-in/check-out e aco
 - ⚙️ Serviços: visualize os serviços disponíveis oferecidos pelo hotel.
 - 📑 Ficha do pet: acesso rápido às informações do animal.
 
-Protótipo
-
-As telas foram desenvolvidas no Figma e simulam a experiência de uso no celular.
-Exemplos de telas:
-
-🔹 Tela inicial com os desenvolvedores
-🔹 Menu principal com acesso às funções
-🔹 Cadastro do tutor e do pet
-
-👩‍💻 Desenvolvedoras
-
+## 👩‍💻 Desenvolvedoras
 Analice Moschen e Danieli Maria Lefchak
 
+## 🚀 Tecnologias utilizadas
+- Kotlin → desenvolvimento Android
+- Android Studio → ambiente de desenvolvimento
+- Figma → prototipação das telas
+
+🔹 Tela inicial com os desenvolvedores
 <img width="1366" height="768" alt="hospet1" src="https://github.com/user-attachments/assets/97adb960-8adb-414e-b153-fed3e952f780" />
 
+🔹 Menu principal com acesso às funções
 <img width="1366" height="768" alt="hospet2" src="https://github.com/user-attachments/assets/f1acaedf-e9e9-45c8-8a2d-e48717d145eb" />
 
+🔹 Cadastro do tutor e do pet
 <img width="1353" height="768" alt="hospet3" src="https://github.com/user-attachments/assets/bcb68b41-01ee-4704-989c-906a4dc35ae3" />
+
