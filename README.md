@@ -29,7 +29,7 @@ Analice Moschen e Danieli Maria Lefchak
 🔹 Menu principal com acesso às funções
 <img width="1366" height="768" alt="hospet2" src="https://github.com/user-attachments/assets/f1acaedf-e9e9-45c8-8a2d-e48717d145eb" />
 
-🔹 Cadastro do tutor e do pet
+🔹 Cadastro do tutor
 <img width="1353" height="768" alt="hospet3" src="https://github.com/user-attachments/assets/bcb68b41-01ee-4704-989c-906a4dc35ae3" />
 
 🔹 Check-in
