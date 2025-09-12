@@ -38,3 +38,10 @@ Analice Moschen e Danieli Maria Lefchak
 🔹 Serviços
 <img width="1357" height="768" alt="hospet5servicos" src="https://github.com/user-attachments/assets/76297bf1-1899-4621-837d-951eae53336b" />
 
+🔹 Cadastrar Serviço
+<img width="1353" height="768" alt="hospet7-cadastrar-servico" src="https://github.com/user-attachments/assets/8b1435fc-08d1-4328-a471-e8bb1e446fe5" />
+
+🔹 Checkout
+<img width="1349" height="768" alt="hospet-checkout" src="https://github.com/user-attachments/assets/40ffe6bd-979b-44b4-879a-54c9901c3aee" />
+
+
